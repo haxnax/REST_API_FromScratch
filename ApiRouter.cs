@@ -42,7 +42,7 @@ public class ApiRouter
             if(MatchesPattern(route.Key,path,out var parameters))
             {
                 request.QueryParameters= parameters;
-                return await route.(request);
+                return await route.Value(request);
 
             }
         }
