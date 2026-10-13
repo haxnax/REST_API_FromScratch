@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("RESTfulAPIFromScratch")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+a2b6bec1ae4d4d718318c43a900773d048ced76e")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+866062f092b61a3cfb552b36dd540701b841298b")]
 [assembly: System.Reflection.AssemblyProductAttribute("RESTfulAPIFromScratch")]
 [assembly: System.Reflection.AssemblyTitleAttribute("RESTfulAPIFromScratch")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
