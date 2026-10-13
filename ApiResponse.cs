@@ -1,3 +1,5 @@
+using System.Runtime.CompilerServices;
+
 public class ApiResponse
 {
     public int StatusCode { get; set; } = 200;
@@ -6,3 +8,4 @@ public class ApiResponse
     public Dictionary<string, string> Headers { get; set; } = new Dictionary<string, string>();
 
 }
+

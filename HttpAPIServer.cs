@@ -55,6 +55,24 @@ public class HttpAPIServer
         }
     }
 
+    private async Task SendResponseAsync(HttpListenerResponse response, ApiResponse apiResponse)
+    {
+        response.StatusCode= apiResponse.StatusCode;
+        response.ContentType= apiResponse.ContentType;
+
+        foreach(var header in apiResponse.Headers)
+        {
+            response.Headers.Add(header.Key, header.Value);
+        }
+        if(!string.IsNullOrEmpty(apiResponse.Body))
+        {
+            var buffer = Encoding.UTF8.GetBytes(apiResponse.Body);
+            response.ContentLength64 = buffer.Length;
+            await response.OutputStream.WriteAsync(buffer,0,buffer.Length);
+        }
+        response.Close();
+    }
+
     private async Task HandleErrorAsync(HttpListenerResponse response, Exception ex)
     {
         response.StatusCode = 500;
