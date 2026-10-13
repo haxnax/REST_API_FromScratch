@@ -5,6 +5,7 @@ using System.Text.Json;
 public class HttpAPIServer
 {
     private HttpListener _listner;
+    private ApiRouter _router ;
     private readonly string _baseUrl = "http://localhost:8080/";
 
 
@@ -32,26 +33,17 @@ public class HttpAPIServer
     }
     private async Task ProcessRequestAsync(HttpListenerContext context)
     {
-        var request = context.Request;
-        var response = context.Response;
+        ApiRequest apiRequest=null;
         try
         {
-            Console.WriteLine($"{DateTime.Now:yyyy-MM-dd HH:mm:ss} - {request.HttpMethod} {request.Url}");
-            response.Headers.Add("Access-Control-Allow-Origin", "*");
-            response.Headers.Add("Access-Control-Allow-Methods", "GET, POST, PUT, DELETE, OPTIONS");
-            response.Headers.Add("Access-Control-Allow-Headers", "Content-Type");
+            apiRequest= await RequestParser.ParseAsync(context.Request);
+            var apiResponse = await _router.RouteAsync(apiRequest);
+            await SendResponseAsync(context.Response,apiResponse);
 
-            if (request.HttpMethod == "OPTIONS")
-            {
-                response.StatusCode = 200;
-                response.Close();
-                return;
-            }
-            await RouteRequestAsync(request, response);
-        }
-        catch (Exception ex)
+        }catch(Exception ex)
         {
-            await HandleErrorAsync(response, ex);
+            var errorResponse= await GlobalErrorHandler.HandleAsync(ex, apiRequest);
+            await SendResponseAsync(context.Response, errorResponse);
         }
     }
 
