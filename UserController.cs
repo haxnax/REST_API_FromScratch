@@ -117,7 +117,7 @@ public class UserController
             {
                 StatusCode = 200,
                 ContentType = "application/json",
-                Body = JsonSerializer.Serialize(newUser, new JsonSerializerOptions { PropertyNamingPolicy = JsonNamingPolicy.CamelCase })
+                Body = JsonSerializer.Serialize(user, new JsonSerializerOptions { PropertyNamingPolicy = JsonNamingPolicy.CamelCase })
             };
         }
         catch (JsonException)
@@ -140,7 +140,7 @@ public class UserController
         }
 
         _users.Remove(user);
-        
+
         return new ApiResponse { StatusCode = 204 }; // No Content
 
 
