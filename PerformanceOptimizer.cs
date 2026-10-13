@@ -27,7 +27,7 @@ public class PerformanceOptimizer
             _cache[key]= new CacheItem
             {
                 Data=value,
-                Expiry= DateTime.UtcNow.Add(expiry);
+                Expiry= DateTime.UtcNow.Add(expiry),
             };
         }
     }
