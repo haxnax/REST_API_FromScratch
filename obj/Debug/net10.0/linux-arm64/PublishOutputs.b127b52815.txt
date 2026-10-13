@@ -1,0 +1,5 @@
+/Users/nancyqadas/Desktop/RESTfulAPIFromScratch/bin/Debug/net10.0/linux-arm64/publish/RESTfulAPIFromScratch
+/Users/nancyqadas/Desktop/RESTfulAPIFromScratch/bin/Debug/net10.0/linux-arm64/publish/RESTfulAPIFromScratch.dll
+/Users/nancyqadas/Desktop/RESTfulAPIFromScratch/bin/Debug/net10.0/linux-arm64/publish/RESTfulAPIFromScratch.deps.json
+/Users/nancyqadas/Desktop/RESTfulAPIFromScratch/bin/Debug/net10.0/linux-arm64/publish/RESTfulAPIFromScratch.runtimeconfig.json
+/Users/nancyqadas/Desktop/RESTfulAPIFromScratch/bin/Debug/net10.0/linux-arm64/publish/RESTfulAPIFromScratch.pdb

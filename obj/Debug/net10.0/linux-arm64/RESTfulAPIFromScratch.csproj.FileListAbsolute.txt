@@ -1,0 +1,14 @@
+/Users/nancyqadas/Desktop/RESTfulAPIFromScratch/bin/Debug/net10.0/linux-arm64/RESTfulAPIFromScratch
+/Users/nancyqadas/Desktop/RESTfulAPIFromScratch/bin/Debug/net10.0/linux-arm64/RESTfulAPIFromScratch.deps.json
+/Users/nancyqadas/Desktop/RESTfulAPIFromScratch/bin/Debug/net10.0/linux-arm64/RESTfulAPIFromScratch.runtimeconfig.json
+/Users/nancyqadas/Desktop/RESTfulAPIFromScratch/bin/Debug/net10.0/linux-arm64/RESTfulAPIFromScratch.dll
+/Users/nancyqadas/Desktop/RESTfulAPIFromScratch/bin/Debug/net10.0/linux-arm64/RESTfulAPIFromScratch.pdb
+/Users/nancyqadas/Desktop/RESTfulAPIFromScratch/obj/Debug/net10.0/linux-arm64/RESTfulAPIFromScratch.GeneratedMSBuildEditorConfig.editorconfig
+/Users/nancyqadas/Desktop/RESTfulAPIFromScratch/obj/Debug/net10.0/linux-arm64/RESTfulAPIFromScratch.AssemblyInfoInputs.cache
+/Users/nancyqadas/Desktop/RESTfulAPIFromScratch/obj/Debug/net10.0/linux-arm64/RESTfulAPIFromScratch.AssemblyInfo.cs
+/Users/nancyqadas/Desktop/RESTfulAPIFromScratch/obj/Debug/net10.0/linux-arm64/RESTfulAPIFromScratch.csproj.CoreCompileInputs.cache
+/Users/nancyqadas/Desktop/RESTfulAPIFromScratch/obj/Debug/net10.0/linux-arm64/RESTfulAPIFromScratch.dll
+/Users/nancyqadas/Desktop/RESTfulAPIFromScratch/obj/Debug/net10.0/linux-arm64/refint/RESTfulAPIFromScratch.dll
+/Users/nancyqadas/Desktop/RESTfulAPIFromScratch/obj/Debug/net10.0/linux-arm64/RESTfulAPIFromScratch.pdb
+/Users/nancyqadas/Desktop/RESTfulAPIFromScratch/obj/Debug/net10.0/linux-arm64/RESTfulAPIFromScratch.genruntimeconfig.cache
+/Users/nancyqadas/Desktop/RESTfulAPIFromScratch/obj/Debug/net10.0/linux-arm64/ref/RESTfulAPIFromScratch.dll
